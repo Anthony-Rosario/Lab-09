@@ -1,12 +1,12 @@
-DROP TABLES IF EXISTS strains;
+DROP TABLE IF EXISTS strains;
 
 
-CREATE TABLE skateboards (
+CREATE TABLE strains (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name TEXT NOT NULL, 
   genetics TEXT NOT NULL,
   thc TEXT NOT NULL,
   cbd TEXT NOT NULL,
   effect TEXT NOT NULL,
-  grow_climate TEXT NOT NULL,
-)
+  grow_climate TEXT NOT NULL
+);
